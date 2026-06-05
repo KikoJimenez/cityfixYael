@@ -1,0 +1,28 @@
+AUDITORÍA QA - CityFixApp (Yael)
+
+Auditor: KikoJimenez
+Fecha: 2026-06-04
+Resultado: ✅ APROBADO - Todas las pruebas pasan en verde
+
+========================================
+ARQUITECTURA DE INFRAESTRUCTURA
+========================================
+
+Contenedor Docker
+- Imagen base: node:20-alpine (ligera y optimizada)
+- El contenedor instala dependencias con npm install
+- Al iniciar ejecuta automáticamente npm test
+
+Conexión a Supabase
+- Conexión exitosa a proyecto activo de Supabase
+- Retorna un array auténtico de JavaScript con datos reales
+
+========================================
+EVIDENCIA DE PRUEBAS
+========================================
+
+Test                                        Resultado
+Debe devolver un Array de JavaScript        ✅ PASS
+
+Tiempo de ejecución: 2.344s
+Código de salida: 0
